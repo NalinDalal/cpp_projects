@@ -32,6 +32,12 @@ struct Date {
             }
         }
     }
+
+    // Overloaded << operator for output
+    friend std::ostream& operator<<(std::ostream& os, const Date& date) {
+        os << date.d << "/" << date.m << "/" << date.y;
+        return os;
+    }
 };
 
 Date my_birthday;
@@ -43,7 +49,9 @@ void f() {
 
     Date tomorrow = today;
     tomorrow.add_day(1);
-    // ...
+
+    std::cout << "Today: " << today << std::endl;
+    std::cout << "Tomorrow: " << tomorrow << std::endl;
 }
 
 int main() {
