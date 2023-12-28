@@ -1,0 +1,5 @@
+hi this is a demo file to be used i don't know if this thing will work or not
+let me hope for the best
+
+Well what i did is just made a sort of counter which counts the no of cahracters in the file which is then logged to another variable which is applied the according math
+the math give me the size of file(theoritically)
